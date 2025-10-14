@@ -1,0 +1,1203 @@
+package com.example.ergasia6;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ToggleButton;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+
+import javafx.stage.Stage;
+
+import javax.swing.*;
+import java.io.IOException;
+import java.util.*;
+
+
+public class HelloController {
+
+    @FXML
+    private Button ButtonTime;//Κουμπι ωρας
+    @FXML
+    private Button ButtonTime1;//Κουμπι ωρας
+    @FXML
+    private Button ButtonTime2;//Κουμπι ωρας
+    @FXML
+    private Button ButtonTime3;//Κουμπι ωρας
+    @FXML
+    private Button ButtonTime4;//Κουμπι ωρας
+    @FXML
+    private Button ButtonTime5;//Κουμπι ωρας
+    @FXML
+    private Button ButtonDays;//Κουμπι μερας
+    @FXML
+    private Button ButtonDays1;//Κουμπι μερας
+    @FXML
+    private Button ButtonDays2;//Κουμπι μερας
+    @FXML
+    private Button ButtonDays3;//Κουμπι μερας
+    @FXML
+    private Button ButtonDays4;//Κουμπι μερας
+    @FXML
+    private Button ButtonDays5;//Κουμπι μερας
+    @FXML
+    private Button ButtonDays6;//Κουμπι μερας
+
+    //Grip Pane 1 4x10
+    @FXML
+    private Button ButtonSeat1_0_0;//Κουμπι θεσεις
+    @FXML
+    private Button ButtonSeat1_0_1;
+    @FXML
+    private Button ButtonSeat1_0_2;
+    @FXML
+    private Button ButtonSeat1_0_3;
+
+    @FXML
+    private Button ButtonSeat1_1_0;
+    @FXML
+    private Button ButtonSeat1_1_1;
+    @FXML
+    private Button ButtonSeat1_1_2;
+    @FXML
+    private Button ButtonSeat1_1_3;
+
+    @FXML
+    private Button ButtonSeat1_2_0;
+    @FXML
+    private Button ButtonSeat1_2_1;
+    @FXML
+    private Button ButtonSeat1_2_2;
+    @FXML
+    private Button ButtonSeat1_2_3;
+
+    @FXML
+    private Button ButtonSeat1_3_0;
+    @FXML
+    private Button ButtonSeat1_3_1;
+    @FXML
+    private Button ButtonSeat1_3_2;
+    @FXML
+    private Button ButtonSeat1_3_3;
+
+    @FXML
+    private Button ButtonSeat1_4_0;
+    @FXML
+    private Button ButtonSeat1_4_1;
+    @FXML
+    private Button ButtonSeat1_4_2;
+    @FXML
+    private Button ButtonSeat1_4_3;
+
+    @FXML
+    private Button ButtonSeat1_5_0;
+    @FXML
+    private Button ButtonSeat1_5_1;
+    @FXML
+    private Button ButtonSeat1_5_2;
+    @FXML
+    private Button ButtonSeat1_5_3;
+
+    @FXML
+    private Button ButtonSeat1_6_0;
+    @FXML
+    private Button ButtonSeat1_6_1;
+    @FXML
+    private Button ButtonSeat1_6_2;
+    @FXML
+    private Button ButtonSeat1_6_3;
+
+    @FXML
+    private Button ButtonSeat1_7_0;
+    @FXML
+    private Button ButtonSeat1_7_1;
+    @FXML
+    private Button ButtonSeat1_7_2;
+    @FXML
+    private Button ButtonSeat1_7_3;
+
+    @FXML
+    private Button ButtonSeat1_8_0;
+    @FXML
+    private Button ButtonSeat1_8_1;
+    @FXML
+    private Button ButtonSeat1_8_2;
+    @FXML
+    private Button ButtonSeat1_8_3;
+
+    @FXML
+    private Button ButtonSeat1_9_0;
+    @FXML
+    private Button ButtonSeat1_9_1;
+    @FXML
+    private Button ButtonSeat1_9_2;
+    @FXML
+    private Button ButtonSeat1_9_3;
+
+    @FXML
+    private Button ButtonSeat2_0_0;
+    @FXML
+    private Button ButtonSeat2_0_1;
+    @FXML
+    private Button ButtonSeat2_0_2;
+    @FXML
+    private Button ButtonSeat2_0_3;
+    @FXML
+    private Button ButtonSeat2_0_4;
+    @FXML
+    private Button ButtonSeat2_0_5;
+    @FXML
+    private Button ButtonSeat2_0_6;
+
+    @FXML
+    private Button ButtonSeat2_1_0;
+    @FXML
+    private Button ButtonSeat2_1_1;
+    @FXML
+    private Button ButtonSeat2_1_2;
+    @FXML
+    private Button ButtonSeat2_1_3;
+    @FXML
+    private Button ButtonSeat2_1_4;
+    @FXML
+    private Button ButtonSeat2_1_5;
+    @FXML
+    private Button ButtonSeat2_1_6;
+
+    @FXML
+    private Button ButtonSeat2_2_0;
+    @FXML
+    private Button ButtonSeat2_2_1;
+    @FXML
+    private Button ButtonSeat2_2_2;
+    @FXML
+    private Button ButtonSeat2_2_3;
+    @FXML
+    private Button ButtonSeat2_2_4;
+    @FXML
+    private Button ButtonSeat2_2_5;
+    @FXML
+    private Button ButtonSeat2_2_6;
+
+    @FXML
+    private Button ButtonSeat2_3_0;
+    @FXML
+    private Button ButtonSeat2_3_1;
+    @FXML
+    private Button ButtonSeat2_3_2;
+    @FXML
+    private Button ButtonSeat2_3_3;
+    @FXML
+    private Button ButtonSeat2_3_4;
+    @FXML
+    private Button ButtonSeat2_3_5;
+    @FXML
+    private Button ButtonSeat2_3_6;
+
+    @FXML
+    private Button ButtonSeat2_4_0;
+    @FXML
+    private Button ButtonSeat2_4_1;
+    @FXML
+    private Button ButtonSeat2_4_2;
+    @FXML
+    private Button ButtonSeat2_4_3;
+    @FXML
+    private Button ButtonSeat2_4_4;
+    @FXML
+    private Button ButtonSeat2_4_5;
+    @FXML
+    private Button ButtonSeat2_4_6;
+
+    @FXML
+    private Button ButtonSeat2_5_0;
+    @FXML
+    private Button ButtonSeat2_5_1;
+    @FXML
+    private Button ButtonSeat2_5_2;
+    @FXML
+    private Button ButtonSeat2_5_3;
+    @FXML
+    private Button ButtonSeat2_5_4;
+    @FXML
+    private Button ButtonSeat2_5_5;
+    @FXML
+    private Button ButtonSeat2_5_6;
+
+    @FXML
+    private Button ButtonSeat2_6_0;
+    @FXML
+    private Button ButtonSeat2_6_1;
+    @FXML
+    private Button ButtonSeat2_6_2;
+    @FXML
+    private Button ButtonSeat2_6_3;
+    @FXML
+    private Button ButtonSeat2_6_4;
+    @FXML
+    private Button ButtonSeat2_6_5;
+    @FXML
+    private Button ButtonSeat2_6_6;
+
+    @FXML
+    private Button ButtonSeat2_7_0;
+    @FXML
+    private Button ButtonSeat2_7_1;
+    @FXML
+    private Button ButtonSeat2_7_2;
+    @FXML
+    private Button ButtonSeat2_7_3;
+    @FXML
+    private Button ButtonSeat2_7_4;
+    @FXML
+    private Button ButtonSeat2_7_5;
+    @FXML
+    private Button ButtonSeat2_7_6;
+
+    @FXML
+    private Button ButtonSeat2_8_0;
+    @FXML
+    private Button ButtonSeat2_8_1;
+    @FXML
+    private Button ButtonSeat2_8_2;
+    @FXML
+    private Button ButtonSeat2_8_3;
+    @FXML
+    private Button ButtonSeat2_8_4;
+    @FXML
+    private Button ButtonSeat2_8_5;
+    @FXML
+    private Button ButtonSeat2_8_6;
+
+    @FXML
+    private Button ButtonSeat3_0_0;//Κουμπι θεσεις
+    @FXML
+    private Button ButtonSeat3_0_1;
+    @FXML
+    private Button ButtonSeat3_0_2;
+    @FXML
+    private Button ButtonSeat3_0_3;
+
+    @FXML
+    private Button ButtonSeat3_1_0;
+    @FXML
+    private Button ButtonSeat3_1_1;
+    @FXML
+    private Button ButtonSeat3_1_2;
+    @FXML
+    private Button ButtonSeat3_1_3;
+
+    @FXML
+    private Button ButtonSeat3_2_0;
+    @FXML
+    private Button ButtonSeat3_2_1;
+    @FXML
+    private Button ButtonSeat3_2_2;
+    @FXML
+    private Button ButtonSeat3_2_3;
+
+    @FXML
+    private Button ButtonSeat3_3_0;
+    @FXML
+    private Button ButtonSeat3_3_1;
+    @FXML
+    private Button ButtonSeat3_3_2;
+    @FXML
+    private Button ButtonSeat3_3_3;
+
+    @FXML
+    private Button ButtonSeat3_4_0;
+    @FXML
+    private Button ButtonSeat3_4_1;
+    @FXML
+    private Button ButtonSeat3_4_2;
+    @FXML
+    private Button ButtonSeat3_4_3;
+
+    @FXML
+    private Button ButtonSeat3_5_0;
+    @FXML
+    private Button ButtonSeat3_5_1;
+    @FXML
+    private Button ButtonSeat3_5_2;
+    @FXML
+    private Button ButtonSeat3_5_3;
+
+    @FXML
+    private Button ButtonSeat3_6_0;
+    @FXML
+    private Button ButtonSeat3_6_1;
+    @FXML
+    private Button ButtonSeat3_6_2;
+    @FXML
+    private Button ButtonSeat3_6_3;
+
+    @FXML
+    private Button ButtonSeat3_7_0;
+    @FXML
+    private Button ButtonSeat3_7_1;
+    @FXML
+    private Button ButtonSeat3_7_2;
+    @FXML
+    private Button ButtonSeat3_7_3;
+
+    @FXML
+    private Button ButtonSeat3_8_0;
+    @FXML
+    private Button ButtonSeat3_8_1;
+    @FXML
+    private Button ButtonSeat3_8_2;
+    @FXML
+    private Button ButtonSeat3_8_3;
+
+    @FXML
+    private Button ButtonSeat3_9_0;
+    @FXML
+    private Button ButtonSeat3_9_1;
+    @FXML
+    private Button ButtonSeat3_9_2;
+    @FXML
+    private Button ButtonSeat3_9_3;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @FXML
+    private ImageView ImageMoviePhoto;
+
+    @FXML
+    private Button switchSceneButton;
+
+
+    @FXML
+    private Label TimeMovie;
+
+    @FXML
+    private Label TitelMovie;
+
+    @FXML
+    private Label DataMovie;
+    @FXML
+    private Label DataMovie1;
+    @FXML
+    private Label DataMovie2;
+
+
+    @FXML
+    private Button MyButtonNextScene;
+
+    @FXML
+    private Label MovieDescription;
+
+
+
+    @FXML
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
+
+    private Set<Button> selectedSeats2 = new HashSet<>(); // Αποθηκεύει τις επιλεγμένες θέσεις
+
+    private Button activeButtonTime = null; // Κρατάει το ενεργό κουμπί
+    private Button activeButtonDays = null; // Κρατάει το ενεργό κουμπί
+
+    private boolean flagTimeFound = false; // Κρατάει τον κουμπί που βρέθηκε
+
+    private List<Button> buttonsTime = new ArrayList<>(); // Λίστα με όλα τα κουμπιά
+    private List<Button> buttonsDays = new ArrayList<>(); // Λίστα με όλα τα κουμπιά
+    Image onImage = new Image(getClass().getResourceAsStream("/com/example/ergasia6/img/ChooseSeats.png"));
+    Image offImage = new Image(getClass().getResourceAsStream("/com/example/ergasia6/img/green.png"));
+    ImageView imageSeat= new ImageView(onImage);
+    ImageView imageSeatOff = new ImageView(offImage);
+
+    private int imageMovie ;
+
+    private boolean  flagImage;
+
+    @FXML
+    private ImageView buttonImageView;
+
+    private final Image defaultImage = new Image(getClass().getResource("/com/example/ergasia6/img/ButtonScene1.png").toExternalForm());
+    private final Image hoverImage = new Image(getClass().getResource("/com/example/ergasia6/img/ButtonScene2.png").toExternalForm());
+
+
+
+    double width = 20;  // Το πλάτος της εικόνας
+    double height = 24; // Το ύψος της εικόνας
+
+
+
+
+
+    private final Image closeSeat = new Image(getClass().getResourceAsStream("/com/example/ergasia6/img/Reserve_Seat.png"));
+    private final ImageView closeSeatImage = new ImageView(closeSeat);
+
+    private int MovieImageFromScene2;
+
+    List<Button> matchedButtons = new ArrayList<>();
+
+    private Set<Button> selectedButtons = new HashSet<>();
+    // Δημιουργούμε τα ImageView και ορίζουμε το μέγεθός τους
+    private final Set<Button> activeButtons = new HashSet<>();
+    private final Set<Button> allButtons = new HashSet<>();
+
+    private Set<Button> selectedSeats;
+    private Button selectedTimeButton;
+    private Button selectedDayButton;
+    private Button ClickedButtonTime ;
+    private Button ClickedButtonDay ;
+    private Button selectedButtonsDaysBack;
+    private boolean flagTimeBack= false;
+    private boolean flagDayFound=false;
+    @FXML
+    private ImageView buttonImageViewBack;
+
+
+    @FXML
+    public void initialize() {
+        // Προσθήκη κουμπιών στη λίστα
+        //Λίστα για την ωρα
+        buttonsTime.add(ButtonTime);
+        buttonsTime.add(ButtonTime1);
+        buttonsTime.add(ButtonTime2);
+        buttonsTime.add(ButtonTime3);
+        buttonsTime.add(ButtonTime4);
+        buttonsTime.add(ButtonTime5);
+
+        //Λίστα για την ημερα
+        buttonsDays.add(ButtonDays);
+        buttonsDays.add(ButtonDays1);
+        buttonsDays.add(ButtonDays2);
+        buttonsDays.add(ButtonDays3);
+        buttonsDays.add(ButtonDays4);
+        buttonsDays.add(ButtonDays5);
+        buttonsDays.add(ButtonDays6);
+
+        allButtons.add(ButtonSeat1_0_0);
+        allButtons.add(ButtonSeat1_0_1);
+        allButtons.add(ButtonSeat1_0_2);
+        allButtons.add(ButtonSeat1_0_3);
+        allButtons.add(ButtonSeat1_1_0);
+        allButtons.add(ButtonSeat1_1_1);
+        allButtons.add(ButtonSeat1_1_2);
+        allButtons.add(ButtonSeat1_1_3);
+        allButtons.add(ButtonSeat1_2_0);
+        allButtons.add(ButtonSeat1_2_1);
+        allButtons.add(ButtonSeat1_2_2);
+        allButtons.add(ButtonSeat1_2_3);
+        allButtons.add(ButtonSeat1_3_0);
+        allButtons.add(ButtonSeat1_3_1);
+        allButtons.add(ButtonSeat1_3_2);
+        allButtons.add(ButtonSeat1_3_3);
+        allButtons.add(ButtonSeat1_4_0);
+        allButtons.add(ButtonSeat1_4_1);
+        allButtons.add(ButtonSeat1_4_2);
+        allButtons.add(ButtonSeat1_4_3);
+        allButtons.add(ButtonSeat1_5_0);
+        allButtons.add(ButtonSeat1_5_1);
+        allButtons.add(ButtonSeat1_5_2);
+        allButtons.add(ButtonSeat1_5_3);
+        allButtons.add(ButtonSeat1_6_0);
+        allButtons.add(ButtonSeat1_6_1);
+        allButtons.add(ButtonSeat1_6_2);
+        allButtons.add(ButtonSeat1_6_3);
+        allButtons.add(ButtonSeat1_7_0);
+        allButtons.add(ButtonSeat1_7_1);
+        allButtons.add(ButtonSeat1_7_2);
+        allButtons.add(ButtonSeat1_7_3);
+        allButtons.add(ButtonSeat1_8_0);
+        allButtons.add(ButtonSeat1_8_1);
+        allButtons.add(ButtonSeat1_8_2);
+        allButtons.add(ButtonSeat1_8_3);
+        allButtons.add(ButtonSeat1_9_0);
+        allButtons.add(ButtonSeat1_9_1);
+        allButtons.add(ButtonSeat1_9_2);
+        allButtons.add(ButtonSeat1_9_3);
+
+
+        allButtons.add(ButtonSeat2_0_0);
+        allButtons.add(ButtonSeat2_0_1);
+        allButtons.add(ButtonSeat2_0_2);
+        allButtons.add(ButtonSeat2_0_3);
+        allButtons.add(ButtonSeat2_0_4);
+        allButtons.add(ButtonSeat2_0_5);
+        allButtons.add(ButtonSeat2_0_6);
+        allButtons.add(ButtonSeat2_1_0);
+        allButtons.add(ButtonSeat2_1_1);
+        allButtons.add(ButtonSeat2_1_2);
+        allButtons.add(ButtonSeat2_1_3);
+        allButtons.add(ButtonSeat2_1_4);
+        allButtons.add(ButtonSeat2_1_5);
+        allButtons.add(ButtonSeat2_1_6);
+
+
+        allButtons.add(ButtonSeat2_2_0);
+        allButtons.add(ButtonSeat2_2_1);
+        allButtons.add(ButtonSeat2_2_2);
+        allButtons.add(ButtonSeat2_2_3);
+        allButtons.add(ButtonSeat2_2_4);
+        allButtons.add(ButtonSeat2_2_5);
+        allButtons.add(ButtonSeat2_2_6);
+
+
+        allButtons.add(ButtonSeat2_3_0);
+        allButtons.add(ButtonSeat2_3_1);
+        allButtons.add(ButtonSeat2_3_2);
+        allButtons.add(ButtonSeat2_3_3);
+        allButtons.add(ButtonSeat2_3_4);
+        allButtons.add(ButtonSeat2_3_5);
+        allButtons.add(ButtonSeat2_3_6);
+
+
+        allButtons.add(ButtonSeat2_4_0);
+        allButtons.add(ButtonSeat2_4_1);
+        allButtons.add(ButtonSeat2_4_2);
+        allButtons.add(ButtonSeat2_4_3);
+        allButtons.add(ButtonSeat2_4_4);
+        allButtons.add(ButtonSeat2_4_5);
+        allButtons.add(ButtonSeat2_4_6);
+
+
+        allButtons.add(ButtonSeat2_5_0);
+        allButtons.add(ButtonSeat2_5_1);
+        allButtons.add(ButtonSeat2_5_2);
+        allButtons.add(ButtonSeat2_5_3);
+        allButtons.add(ButtonSeat2_5_4);
+        allButtons.add(ButtonSeat2_5_5);
+        allButtons.add(ButtonSeat2_5_6);
+
+
+        allButtons.add(ButtonSeat2_6_0);
+        allButtons.add(ButtonSeat2_6_1);
+        allButtons.add(ButtonSeat2_6_2);
+        allButtons.add(ButtonSeat2_6_3);
+        allButtons.add(ButtonSeat2_6_4);
+        allButtons.add(ButtonSeat2_6_5);
+        allButtons.add(ButtonSeat2_6_6);
+
+
+        allButtons.add(ButtonSeat2_7_0);
+        allButtons.add(ButtonSeat2_7_1);
+        allButtons.add(ButtonSeat2_7_2);
+        allButtons.add(ButtonSeat2_7_3);
+        allButtons.add(ButtonSeat2_7_4);
+        allButtons.add(ButtonSeat2_7_5);
+        allButtons.add(ButtonSeat2_7_6);
+
+
+        allButtons.add(ButtonSeat2_8_0);
+        allButtons.add(ButtonSeat2_8_1);
+        allButtons.add(ButtonSeat2_8_2);
+        allButtons.add(ButtonSeat2_8_3);
+        allButtons.add(ButtonSeat2_8_4);
+        allButtons.add(ButtonSeat2_8_5);
+        allButtons.add(ButtonSeat2_8_6);
+
+
+        allButtons.add(ButtonSeat3_0_0);
+        allButtons.add(ButtonSeat3_0_1);
+        allButtons.add(ButtonSeat3_0_2);
+        allButtons.add(ButtonSeat3_0_3);
+
+        allButtons.add(ButtonSeat3_1_0);
+        allButtons.add(ButtonSeat3_1_1);
+        allButtons.add(ButtonSeat3_1_2);
+        allButtons.add(ButtonSeat3_1_3);
+
+        allButtons.add(ButtonSeat3_2_0);
+        allButtons.add(ButtonSeat3_2_1);
+        allButtons.add(ButtonSeat3_2_2);
+        allButtons.add(ButtonSeat3_2_3);
+
+        allButtons.add(ButtonSeat3_3_0);
+        allButtons.add(ButtonSeat3_3_1);
+        allButtons.add(ButtonSeat3_3_2);
+        allButtons.add(ButtonSeat3_3_3);
+
+        allButtons.add(ButtonSeat3_4_0);
+        allButtons.add(ButtonSeat3_4_1);
+        allButtons.add(ButtonSeat3_4_2);
+        allButtons.add(ButtonSeat3_4_3);
+
+        allButtons.add(ButtonSeat3_5_0);
+        allButtons.add(ButtonSeat3_5_1);
+        allButtons.add(ButtonSeat3_5_2);
+        allButtons.add(ButtonSeat3_5_3);
+
+        allButtons.add(ButtonSeat3_6_0);
+        allButtons.add(ButtonSeat3_6_1);
+        allButtons.add(ButtonSeat3_6_2);
+        allButtons.add(ButtonSeat3_6_3);
+
+        allButtons.add(ButtonSeat3_7_0);
+        allButtons.add(ButtonSeat3_7_1);
+        allButtons.add(ButtonSeat3_7_2);
+        allButtons.add(ButtonSeat3_7_3);
+
+        allButtons.add(ButtonSeat3_8_0);
+        allButtons.add(ButtonSeat3_8_1);
+        allButtons.add(ButtonSeat3_8_2);
+        allButtons.add(ButtonSeat3_8_3);
+
+        allButtons.add(ButtonSeat3_9_0);
+        allButtons.add(ButtonSeat3_9_1);
+        allButtons.add(ButtonSeat3_9_2);
+        allButtons.add(ButtonSeat3_9_3);
+
+
+
+
+
+
+
+
+
+        imageSeat.setFitWidth(width);  // Ορίζουμε το πλάτος της εικόνας
+        imageSeat.setFitHeight(height); // Ορίζουμε το ύψος της εικόνας
+
+
+        imageSeatOff.setFitWidth(width);  // Ορίζουμε το πλάτος της εικόνας
+        imageSeatOff.setFitHeight(height);
+
+       if (buttonImageView.getImage() == null) {
+            buttonImageView.setImage(defaultImage);
+        }
+
+        switchSceneButton.setDisable(true);
+
+       // Προσθήκη listeners για ενεργοποίηση του κουμπιού όταν γίνουν επιλογές
+
+
+
+    }
+
+    public void setImageMoviePhoto()
+    {
+        int TimeMovieSecond=0;
+        String Director=null;
+        String Stars=null;
+        String Genre=null;
+        String Title=null;
+
+        StringBuilder sb = new StringBuilder();
+        System.out.println("MovieImageInitial: "+ imageMovie);
+        Image image=null;
+        switch (imageMovie) {
+            case 1:
+                image = new Image(getClass().getResourceAsStream("/com/example/ergasia6/img/Despicable_Me.jpg"));
+                TimeMovieSecond=94;
+                Director="Chris Renaud & Patrick Delage";
+                Stars="Steve Carell, Kristen Wiig, Pierre Coffin";
+                Genre="Comedy, Adventure, Family,Comedy , Science Fiction";
+                Title="Despicable Me 4";
+                sb.append("Gru, Lucy, Margo, Edith, and Agnes welcome a new member to the family, Gru Jr.,who is intent");
+                sb.append("\n");
+                sb.append("on tormenting his dad. Gru faces a new nemesis in Maxime Le Mal and his girlfriend Valentina,");
+                sb.append("\n");
+                sb.append("and the family is forced to go on the run.");
+                break;
+            case 2:
+                image = new Image(getClass().getResourceAsStream("/com/example/ergasia6/img/venom2.jpg"));
+                TimeMovieSecond=110;
+                Director="Kelly Marcel";
+                Stars="Tom Hardy, Chuwetel Ejiofor, Juno Temple";
+                Genre="Action, Adventure, Sci-fi, Superhero, Thriller";
+                Title="Venom The Last Dance";
+                sb.append("Eddie and Venom,on the run,face pursuit from both worlds. As circumstances tighten,they're compelled");
+                sb.append("\n");
+                sb.append("to make a heart-wrenching choice that could mark the end of their symbiotic partnership");
+                break;
+            case 3:
+                image = new Image(getClass().getResourceAsStream("/com/example/ergasia6/img/Anora.jpg"));
+                TimeMovieSecond=90;
+                Director="Sean Baker";
+                Stars=" Mikey Madison Mark Eydelshteyn Yura Borisov";
+                Genre="Sex Comedy Drama";
+                Title="Anora";
+                sb.append("Anora, a young sex worker from Brooklyn whose life takes an unexpected turn when she meets and impulsively marries Vanya, the impetuous son of");
+                sb.append("\n");
+                sb.append(" a Russian billionaire. However, when Vanya's parents catch wind of the union, they send their henchmen to annul the marriage, setting");
+                sb.append("\n");
+                sb.append("off a wild chase through the streets of New York.");
+
+                break;
+            case 4:
+                image = new Image(getClass().getResourceAsStream("/com/example/ergasia6/img/Evil_Dead_Rise_sosto.jpg"));
+                TimeMovieSecond=96;
+                Director= "Lee Cronin";
+                Stars="Lily Sullivan Alyssa Sutherland Morgan Davies";
+                Genre="Supernatural Horror ";
+                Title="Evil Dead Rise";
+                sb.append("A twisted tale of two estranged sisters whose reunion is cut short by the rise of flesh-possessing demons");
+                sb.append("\n");
+                sb.append(",thrusting them into a primal battle for survival as they face the most nightmarish version of family imaginable. ");
+
+                break;
+        }
+        if (ImageMoviePhoto != null) {
+            ImageMoviePhoto.setImage(image);
+            if (imageMovie == 2)
+            {
+                ImageMoviePhoto.setFitWidth(564);
+                ImageMoviePhoto.setFitHeight(743);
+            }
+            else
+            {
+                ImageMoviePhoto.setFitWidth(629);
+                ImageMoviePhoto.setFitHeight(743);
+            }
+        }
+
+        TimeMovie.setText(TimeMovieSecond +" Minutes");
+        TitelMovie.setText(Title);
+        DataMovie.setText(Director);
+        DataMovie1.setText(Stars);
+        DataMovie2.setText(Genre);
+        MovieDescription.setText(sb.toString());
+
+
+
+
+    }
+
+
+
+    public void setMovieImageAndLabels(int MovieImage)
+    {
+        System.out.println("MovieImage: "+ MovieImage);
+        this.imageMovie=MovieImage;
+
+
+
+
+
+    }
+
+    public void updateSelectedSeats() {
+        if (activeButtonTime.equals(selectedTimeButton) && activeButtonDays.equals(selectedDayButton)) {
+            for (Button seat : selectedSeats) {
+                seat.setDisable(true);
+                // Set the specific image for the seat
+                ImageView seatImage = new ImageView(closeSeat);
+                seatImage.setFitWidth(24);
+                seatImage.setFitHeight(height);
+                seat.setGraphic(seatImage);
+            }
+        }
+
+    }
+
+
+
+
+    @FXML
+    public void SwitchToScene0(ActionEvent event) throws IOException {
+
+        // Φορτώνουμε τη σκηνή 0
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/ergasia6/SceneMovies.fxml"));
+        Parent root = loader.load();
+        SceneMovies sceneMovies = loader.getController();
+        sceneMovies.setSelectedSeats(selectedButtons,selectedButtonsDaysBack,flagTimeBack,selectedTimeButton);
+
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    public void SwitchToScene2(ActionEvent event) throws IOException {
+        // Έλεγχος αν έχει επιλεγεί ώρα και ημέρα
+        if (activeButtonTime == null) {
+            System.out.println("Δεν έχει επιλεγεί ώρα.");
+            return;
+        }
+
+        if (activeButtonDays == null) {
+            System.out.println("Δεν έχει επιλεγεί ημέρα.");
+            return;
+        }
+
+        // Έλεγχος αν έχει επιλεγεί τουλάχιστον μια θέση
+        if (activeButtons.isEmpty()) {
+            System.out.println("Δεν έχει επιλεγεί καμία θέση.");
+            return;
+        }
+
+
+        // Φορτώνουμε τη σκηνή 2
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/ergasia6/Ergasia.fxml"));
+        Parent root = loader.load();
+
+        // Παίρνουμε τον controller της σκηνής 2
+        Scene2Controller scene2Controller = loader.getController();
+
+        // Μεταβιβάζουμε τις ενεργές θέσεις και τις θέσεις στο Scene2Controller
+        scene2Controller.setActiveButtonsSize(activeButtons.size());
+        scene2Controller.setSelectedButtons(activeButtons);
+        scene2Controller.setSelectedButtonDay(ClickedButtonDay);
+        scene2Controller.setSelectedButtonsTime(ClickedButtonTime);
+        scene2Controller.setMovieImage(imageMovie);
+
+        //System.out.println(selectedButtons);
+
+
+
+
+        // Μετάβαση στη σκηνή 2
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+
+
+    @FXML
+    public void ButtonTimeStill(ActionEvent event)throws IOException
+    {
+        Button clickedButton = (Button) event.getSource();
+
+
+
+        if (activeButtonTime == null || activeButtonTime.equals(clickedButton)) {
+            // Ενεργοποίηση/Απενεργοποίηση του κουμπιού
+            if (activeButtonTime == null) {
+                clickedButton.setStyle("-fx-background-color: #07F8A3");
+
+
+
+                disableOtherButtons(clickedButton);
+                activeButtonTime = clickedButton;
+            } else {
+                clickedButton.setStyle("-fx-background-color: #333333");
+
+
+
+                enableAllButtons();
+                activeButtonTime = null; // Καμία ενεργή επιλογή
+            }
+        }
+        ClickedButtonTime=clickedButton;
+
+
+
+        //System.out.println("Mpika");
+        //System.out.println(activeButtonTime);
+
+        if(flagTimeBack) {
+            updateButtonsSeat(event);
+            CheckImagesMovies();
+            System.out.println("FlagImage" + flagImage);
+            if (flagDayFound && flagTimeFound && flagImage){
+                SetTheSeats2();
+                flagDayFound=false;
+                flagTimeFound=false;
+                activeButtons.clear();
+            } else {
+                SetTheSeats2Default();
+            }
+        }
+        checkIfReadyToEnableButton();
+    }
+
+
+    public  void SetSelectedButtonsAndTime(Set<Button> selectedSeats2,Button selectedButtonDays, boolean flag ,Button activeButtonTime2)throws IOException
+    {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/ergasia6/Ergasia.fxml"));
+        Parent root = loader.load();
+
+        // Παίρνουμε τον controller της σκηνής 2
+        Scene2Controller scene2Controller = loader.getController();
+
+        this.selectedButtons=selectedSeats2;
+        this.selectedButtonsDaysBack=selectedButtonDays;
+        System.out.println("--------------------------------");
+        System.out.println(selectedButtonDays.getId());
+        this.flagTimeBack=flag;
+        activeButtonDays = null;
+        selectedSeats = selectedSeats2;
+        this.selectedTimeButton = activeButtonTime2;
+        selectedDayButton = selectedButtonDays;
+
+
+
+    }
+
+
+
+    public void updateButtonsSeat(ActionEvent event) {
+        // Λίστα για αντιστοιχίες
+        Button clickedButton = (Button) event.getSource();
+        //activeButtonDays=clickedButton;
+        SetTheSeats2Default();
+        if (selectedButtonsDaysBack == null || selectedButtons == null || activeButtonTime == null) {
+            System.out.println("Δεν υπάρχουν δεδομένα για ενημέρωση.");
+            return;
+        }
+        /*if (activeButtonDays == null) {
+            activeButtonDays = selectedButtonsDaysBack;*/
+        //}
+          for (Button selectedButtons : selectedButtons) {
+              for (Button allButton : allButtons) {
+                 if((activeButtonDays.getId().equals(selectedButtonsDaysBack.getId()))&&(selectedButtons.getId().equals(allButton.getId()))) {
+                     //if (selectedButtons.getId().equals(allButton.getId())) { // Σύγκριση IDs
+
+                     matchedButtons.add(allButton);
+                         flagDayFound=true;
+                          // Πρόσθεσε στη λίστα τις αντιστοιχίες
+                        /* ImageView closeSeatImage = new ImageView(closeSeat);
+                         // Αλλαγή της εικόνας
+                         // Χρησιμοποιούμε τη νέα εικόνα
+                         closeSeatImage.setFitWidth(24); // Ορίζουμε πλάτος
+                         closeSeatImage.setFitHeight(height); // Ορίζουμε ύψος
+                         allButton.setGraphic(closeSeatImage); // Ρυθμίζουμε το νέο γραφικό στο κουμπί
+
+                         // Απενεργοποίηση του κουμπιού
+                         allButton.setDisable(true);*/
+                     //}
+                 }
+                 //&&(selectedButtons.getId().equals(allButton.getId()))
+                  System.out.println("activeButtonTim: "+activeButtonTime);
+                 System.out.println("selectedTimeButton: "+selectedTimeButton);
+                 System.out.println("--------------------------------------------------");
+                  if((activeButtonTime.getId().equals(selectedTimeButton.getId())))
+                 {
+                     flagTimeFound=true;
+
+
+                 }
+
+              }
+
+
+          }
+          System.out.println("--------------------------------------------------");
+          System.out.println("mathedButton: "+matchedButtons.isEmpty());
+
+
+
+        if (matchedButtons.isEmpty()) {
+            //System.out.println("Δεν υπάρχουν κρατημένες θέσεις στις ενεργές επιλογές.");
+        } else {
+           // System.out.println("Βρέθηκαν κρατημένες θέσεις και άλλαξε η εικόνα τους:");
+            for (Button matched : matchedButtons) {
+                //System.out.println("Θέση: " + matched.getId());
+            }
+        }
+        System.out.println("----------------------------------------");
+        System.out.println(flagTimeFound);
+        System.out.println(flagDayFound);
+        System.out.println("----------------------------------------");
+    }
+
+     private void SetTheSeats2()
+     {
+         for(Button  matchedButtons: matchedButtons) {
+             ImageView closeSeatImage = new ImageView(closeSeat);
+             // Αλλαγή της εικόνας
+             // Χρησιμοποιούμε τη νέα εικόνα
+             closeSeatImage.setFitWidth(24); // Ορίζουμε πλάτος
+             closeSeatImage.setFitHeight(height); // Ορίζουμε ύψος
+             matchedButtons.setGraphic(closeSeatImage);
+             matchedButtons.setDisable(true);//
+         }
+     }
+    private void SetTheSeats2Default()
+    {
+        for(Button  matchedButtons: matchedButtons) {
+            ImageView closeSeatImage = new ImageView(offImage);
+            // Αλλαγή της εικόνας
+            // Χρησιμοποιούμε τη νέα εικόνα
+            closeSeatImage.setFitWidth(24); // Ορίζουμε πλάτος
+            closeSeatImage.setFitHeight(height); // Ορίζουμε ύψος
+            matchedButtons.setGraphic(closeSeatImage);
+            matchedButtons.setDisable(false);//
+        }
+    }
+
+    private void disableOtherButtons(Button exception) {
+        for (Button button : buttonsTime) {
+            if (!button.equals(exception)) {
+                button.setDisable(true);
+            }
+        }
+
+    }
+
+    private void enableAllButtons() {
+        for (Button button : buttonsTime) {
+            button.setDisable(false);
+        }
+    }
+
+
+    @FXML
+    public void ButtonDaysStill(ActionEvent event)
+    {
+        Button clickedButton = (Button) event.getSource();
+         System.out.println("activeButtonDays"+activeButtonDays);
+        if (activeButtonDays == null || activeButtonDays.equals(clickedButton)) {
+            // Ενεργοποίηση/Απενεργοποίηση του κουμπιού
+            System.out.println("Mpikaaaaaaaaaaaaaaa");
+            if (activeButtonDays == null) {
+                clickedButton.setStyle("-fx-background-color: #07F8A3");
+                disableOtherButtonsDays(clickedButton);
+                activeButtonDays = clickedButton;
+            } else {
+                clickedButton.setStyle("-fx-background-color: #333333");
+                enableAllButtonsDays();
+                activeButtonDays = null; // Καμία ενεργή επιλογή
+            }
+        }
+        ClickedButtonDay=clickedButton;
+       // updateButtonsSeat(event);
+         if(flagTimeBack)
+        {
+            updateButtonsSeat(event);
+            CheckImagesMovies();
+          if(flagDayFound && flagTimeFound && flagImage)
+          {
+              SetTheSeats2();
+              flagDayFound=false;
+              flagTimeFound=false;
+           }
+          else
+          {
+              SetTheSeats2Default();
+          }
+
+            System.out.println("FlagTimeBack: " + flagTimeBack);
+            System.out.println("FlagDayFound: " + flagDayFound);
+            System.out.println("ClickedButton: " + clickedButton);
+            System.out.println("ActiveButtonDays: " + activeButtonDays);
+         }
+
+
+            // updateButtonsSeatBackToDefault();
+
+
+        checkIfReadyToEnableButton();
+        updateSelectedSeats();
+    }
+     // θα γυρναει της θεσεςι στο default
+
+  public void CheckImagesMovies()
+  {
+      System.out.println("ImageMovie: "+imageMovie);
+      System.out.println("MovieImageFromScene2: "+MovieImageFromScene2);
+      if(imageMovie==MovieImageFromScene2)
+      flagImage=true;
+
+  }
+
+  public void setMoviePhotoFromScene2(int MovieImageFromScene2)
+    {
+        this.MovieImageFromScene2=MovieImageFromScene2;
+    }
+
+
+
+    private void disableOtherButtonsDays(Button exception) {
+        for (Button button : buttonsDays) {
+            if (!button.equals(exception)) {
+                button.setDisable(true);
+            }
+        }
+
+    }
+
+    private void enableAllButtonsDays() {
+        for (Button button : buttonsDays) {
+            button.setDisable(false);
+        }
+    }
+
+
+    @FXML
+    public void ButtonSeat(ActionEvent event) {
+
+
+        Button clickedButton = (Button) event.getSource();
+
+        ImageView currentImageView = (ImageView) clickedButton.getGraphic();
+
+        if (currentImageView == null) {
+            System.out.println("Το κουμπί δεν έχει εικόνα!");
+            return;
+        }
+
+        if (activeButtons.contains(clickedButton)) {
+            // Απενεργοποιούμε το κουμπί αν είναι ήδη ενεργό
+            currentImageView.setImage(offImage);
+            activeButtons.remove(clickedButton);
+
+
+        } else {
+            // Ενεργοποιούμε το κουμπί αν δεν είναι ενεργό
+            currentImageView.setImage(onImage);
+            activeButtons.add(clickedButton);
+
+
+        }
+
+        //System.out.println(activeButtons.size());
+
+        checkIfReadyToEnableButton();
+    }
+
+    @FXML
+    public void ButtonSceneChange(MouseEvent event) {
+        buttonImageView.setImage(hoverImage);
+        // Εικόνα για hover
+    }
+
+    @FXML
+    public void ResetButtonImage(MouseEvent event) {
+        buttonImageView.setImage(defaultImage);
+        // Επαναφορά στην αρχική εικόνα
+    }
+
+    @FXML
+    public void ButtonSceneChange0(MouseEvent event) {
+        buttonImageViewBack.setImage(hoverImage);
+        // Εικόνα για hover
+    }
+
+    @FXML
+    public void ResetButtonImage0(MouseEvent event) {
+        buttonImageViewBack.setImage(defaultImage);
+        // Επαναφορά στην αρχική εικόνα
+    }
+
+
+    private void checkIfReadyToEnableButton() {
+        // Ενεργοποίηση του κουμπιού μόνο όταν πληρούνται οι προϋποθέσεις
+
+        if (activeButtonTime != null && activeButtonDays != null && !activeButtons.isEmpty()) {
+            switchSceneButton.setDisable(false);
+        } else {
+            switchSceneButton.setDisable(true);
+        }
+    }
+
+
+
+
+}

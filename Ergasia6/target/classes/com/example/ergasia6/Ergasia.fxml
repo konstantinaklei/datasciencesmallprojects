@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1920.0" style="-fx-background-color: #333333;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ergasia6.Scene2Controller">
+   <children>
+      <VBox layoutX="909.0" layoutY="68.0" prefHeight="890.0" prefWidth="517.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="135.0" prefWidth="520.0" text="Στοιχεία Κράτησεις" textFill="WHITE">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label prefHeight="56.0" prefWidth="400.0" text="Όνομα :" textFill="WHITE">
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameField" prefHeight="83.0" prefWidth="505.0" promptText="Π.χ. Μαρία">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <Label prefHeight="54.0" prefWidth="400.0" text="Επίθετο :" textFill="WHITE">
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastNameField" layoutX="10.0" layoutY="42.0" prefHeight="83.0" prefWidth="528.0" promptText="Π.χ. Παπαδόπουλος">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <Label prefHeight="66.0" prefWidth="400.0" text="Email :" textFill="WHITE">
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailField" layoutX="10.0" layoutY="103.0" prefHeight="83.0" prefWidth="517.0" promptText="Π.χ. xxx@gmail.com">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+            <Label prefHeight="44.0" prefWidth="400.0" text="Συνολικό κόστος εισητηρίων : " textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="activeButtonsLabel" prefHeight="93.0" prefWidth="505.0" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="27.0" />
+               </VBox.margin>
+            </Label>
+            <AnchorPane prefHeight="293.0" prefWidth="505.0">
+               <children>
+                  <HBox layoutX="4.0" layoutY="42.0" prefHeight="97.0" prefWidth="605.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#resetFields" prefHeight="34.0" prefWidth="75.0" styleClass="myButtonScene2" text="Reset">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="myButtonContinue" mnemonicParsing="false" onAction="#onContinueButtonClick" prefHeight="38.0" prefWidth="101.0" styleClass="myButtonScene2" text="Continue">
+                           <HBox.margin>
+                              <Insets left="430.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <ImageView fx:id="validationImage" fitHeight="97.0" fitWidth="366.0" layoutX="139.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox layoutX="99.0" layoutY="49.0" prefHeight="822.0" prefWidth="374.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <ImageView fx:id="TitleImage" fitHeight="564.0" fitWidth="390.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Despicable_Me.jpg" />
+               </image>
+            </ImageView>
+            <Label prefHeight="14.0" prefWidth="434.0" text="Director:">
+               <font>
+                  <Font name="Outfit Light" size="16.0" />
+               </font>
+               <padding>
+                  <Insets top="25.0" />
+               </padding>
+            </Label>
+            <Label fx:id="Director" prefHeight="0.0" prefWidth="434.0" text="Kelly Marcel">
+               <font>
+                  <Font name="Outfit Light" size="16.0" />
+               </font>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="16.0" prefWidth="434.0" text="Staring:">
+               <font>
+                  <Font name="Outfit Light" size="16.0" />
+               </font>
+               <padding>
+                  <Insets top="25.0" />
+               </padding>
+            </Label>
+            <Label fx:id="Stars" prefHeight="22.0" prefWidth="434.0" text="Tom Hardy - Chuwetel Ejiofor- Juno Temple">
+               <font>
+                  <Font name="Outfit Light" size="16.0" />
+               </font>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="434.0" text="Genre:">
+               <font>
+                  <Font name="Outfit Light" size="16.0" />
+               </font>
+               <padding>
+                  <Insets top="25.0" />
+               </padding>
+            </Label>
+            <Label fx:id="Genre" prefHeight="18.0" prefWidth="434.0" text="Action - Adventure - Sci-fi - Superhero - Thriller">
+               <font>
+                  <Font name="Outfit Light" size="16.0" />
+               </font>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="MYbuttonBackScene" layoutX="27.0" layoutY="903.0" mnemonicParsing="false" onAction="#SwitchToScene1" onMouseEntered="#ButtonSceneChangeBack" onMouseExited="#ResetButtonImageBack" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: #333333;">
+         <graphic>
+            <ImageView fx:id="buttonImageViewBack" fitHeight="75.0" fitWidth="75.0" onMouseEntered="#ButtonSceneChangeBack" onMouseExited="#ResetButtonImageBack" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 180;">
+               <image>
+                  <Image url="@img/ButtonScene2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

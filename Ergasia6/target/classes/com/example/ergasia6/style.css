@@ -1,0 +1,44 @@
+
+
+
+.circular-button
+{
+    -fx-background-radius: 50%;
+    -fx-padding: 0;
+    -fx-background-color:  #333333;
+}
+.myButtonScene2
+{
+
+    -fx-background-color: #CAEBD9;
+    -fx-border-radius: 12px;
+    -fx-font-family: Outfit;
+    -fx-stroke-width: 2px;
+    -fx-font-size: 17px;
+
+}
+.myButtonScene2:hover
+{
+    -fx-background-color: #6AEBA5;
+    -fx-border-radius: 12px;
+    -fx-font-family: Outfit;
+    -fx-stroke-width: 2px;
+    -fx-font-size: 17px;
+
+}
+
+.myButtonMoivies
+{
+
+    -fx-background-color: #333333;
+
+}
+.myButtonMoivies:hover
+{
+
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-translate-x: -25;
+    -fx-translate-y: -25;
+}
+
